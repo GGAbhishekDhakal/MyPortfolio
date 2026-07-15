@@ -10,8 +10,8 @@ export default function Footer() {
               Want the full story?
             </p>
             <p className="mb-4 text-xs text-muted">
-              Download my resume to view experience, projects, and skills in one
-              PDF.
+              Grab a copy of my resume — all my experience, projects, and
+              skills wrapped up in one neat PDF.
             </p>
             <a
               href="/resume.pdf"
@@ -39,16 +39,16 @@ export default function Footer() {
 
         <div className="flex flex-col items-center gap-4 sm:flex-row sm:justify-between">
           <p className="text-xs text-muted">
-            &copy; {new Date().getFullYear()} Abhishek Dhakal. All rights
-            reserved.
+            &copy; {new Date().getFullYear()} Abhishek Dhakal. Crafted with
+            Next.js &amp; Tailwind.
           </p>
 
-          <div className="flex items-center gap-4">
+          <div className="flex items-center gap-3">
             <a
               href="https://github.com/GGAbhishekDhakal"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-muted transition-all hover:scale-110 hover:text-foreground"
+              className="social-icon icon-github"
               aria-label="GitHub"
             >
               <svg
@@ -64,7 +64,7 @@ export default function Footer() {
               href="https://www.linkedin.com/in/abhishek-dhakal-02183a184/"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-muted transition-all hover:scale-110 hover:text-foreground"
+              className="social-icon icon-linkedin"
               aria-label="LinkedIn"
             >
               <svg
@@ -78,7 +78,7 @@ export default function Footer() {
             </a>
             <a
               href="mailto:gg.abhishekdhakal@gmail.com"
-              className="text-muted transition-all hover:scale-110 hover:text-foreground"
+              className="social-icon icon-email"
               aria-label="Email"
             >
               <svg

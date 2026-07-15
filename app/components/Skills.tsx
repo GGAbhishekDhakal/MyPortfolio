@@ -2,67 +2,73 @@ import Reveal from "./Reveal";
 
 const categories = [
   {
-    title: "Programming & Frameworks",
+    title: "Languages & Frameworks",
+    icon: "💻",
     skills: [
-      "C#",
-      "ASP.NET Core (.NET 8 & 9)",
-      ".NET Framework",
-      "Web API",
-      "Minimal API",
-      "MVC",
-      "Entity Framework Core",
-      "LINQ",
+      { name: "C#", className: "skill-tag-csharp" },
+      { name: "ASP.NET Core (.NET 8 & 9)", className: "skill-tag-dotnet" },
+      { name: ".NET Framework", className: "skill-tag-dotnet" },
+      { name: "Web API", className: "skill-tag-dotnet" },
+      { name: "Minimal API", className: "skill-tag-dotnet" },
+      { name: "MVC", className: "skill-tag-dotnet" },
+      { name: "Entity Framework Core", className: "skill-tag-dotnet" },
+      { name: "LINQ", className: "skill-tag-dotnet" },
     ],
   },
   {
     title: "Databases",
+    icon: "🗄️",
     skills: [
-      "Microsoft SQL Server",
-      "PostgreSQL",
-      "Oracle",
-      "PL/SQL",
+      { name: "Microsoft SQL Server", className: "skill-tag-sql" },
+      { name: "PostgreSQL", className: "skill-tag-sql" },
+      { name: "Oracle", className: "skill-tag-sql" },
+      { name: "PL/SQL", className: "skill-tag-sql" },
     ],
   },
   {
-    title: "DevOps & Infrastructure",
+    title: "DevOps & Cloud",
+    icon: "☁️",
     skills: [
-      "Windows Server",
-      "IIS Server",
-      "AWS EC2",
-      "Docker",
-      "Git",
-      "GitHub",
-      "Bitbucket",
+      { name: "Docker", className: "skill-tag-docker" },
+      { name: "AWS EC2", className: "skill-tag-aws" },
+      { name: "Windows Server", className: "" },
+      { name: "IIS Server", className: "" },
+      { name: "Git", className: "skill-tag-git" },
+      { name: "GitHub", className: "skill-tag-git" },
+      { name: "Bitbucket", className: "skill-tag-git" },
     ],
   },
   {
     title: "Frontend",
+    icon: "🎨",
     skills: [
-      "Angular",
-      "Ember.js",
-      "HTML",
-      "CSS",
-      "JavaScript",
-      "TypeScript",
+      { name: "Angular", className: "skill-tag-angular" },
+      { name: "Ember.js", className: "" },
+      { name: "HTML", className: "skill-tag-html" },
+      { name: "CSS", className: "skill-tag-css" },
+      { name: "JavaScript", className: "skill-tag-js" },
+      { name: "TypeScript", className: "skill-tag-typescript" },
     ],
   },
   {
-    title: "Architecture & Design",
+    title: "Architecture",
+    icon: "🏗️",
     skills: [
-      "Clean Architecture",
-      "Domain-Driven Design",
-      "Repository & Unit of Work",
-      "Microservices",
+      { name: "Clean Architecture", className: "" },
+      { name: "Domain-Driven Design", className: "" },
+      { name: "Repository & Unit of Work", className: "" },
+      { name: "Microservices", className: "" },
     ],
   },
   {
     title: "Soft Skills",
+    icon: "🤝",
     skills: [
-      "Communication",
-      "Team Collaboration",
-      "Problem-Solving",
-      "Continuous Learning",
-      "Documentation",
+      { name: "Communication", className: "" },
+      { name: "Team Collaboration", className: "" },
+      { name: "Problem-Solving", className: "" },
+      { name: "Continuous Learning", className: "" },
+      { name: "Documentation", className: "" },
     ],
   },
 ];
@@ -73,10 +79,11 @@ export default function Skills() {
       <div className="mx-auto max-w-5xl">
         <Reveal>
           <h2 className="mb-2 text-2xl font-bold tracking-tight text-foreground">
-            Skills
+            My Toolbox
           </h2>
           <p className="mb-12 text-sm text-muted">
-            Technologies and tools I work with.
+            The technologies, tools, and patterns I reach for when building
+            something great.
           </p>
         </Reveal>
 
@@ -85,15 +92,18 @@ export default function Skills() {
             <Reveal key={i} delay={i * 80}>
               <div className="rounded-xl border border-card-border bg-card p-6 transition-all hover:border-accent/40 hover:shadow-lg hover:shadow-accent/5">
                 <h3 className="mb-4 text-sm font-semibold text-foreground">
+                  <span className="mr-1.5">{cat.icon}</span>
                   {cat.title}
                 </h3>
                 <div className="flex flex-wrap gap-2">
                   {cat.skills.map((skill, j) => (
                     <span
                       key={j}
-                      className="rounded-full bg-accent/10 px-3 py-1 text-xs font-medium text-accent transition-colors hover:bg-accent/20"
+                      className={`rounded-full px-3 py-1 text-xs font-medium transition-colors hover:opacity-80 ${
+                        skill.className || "bg-accent/10 text-accent"
+                      }`}
                     >
-                      {skill}
+                      {skill.name}
                     </span>
                   ))}
                 </div>

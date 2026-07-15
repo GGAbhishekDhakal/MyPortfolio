@@ -8,6 +8,8 @@
   --muted: #6b7280;
   --accent: #2563eb;
   --accent-hover: #1d4ed8;
+  --progress-bg: #e5e7eb;
+  --progress-fill: linear-gradient(90deg, #3b82f6, #8b5cf6, #ec4899);
 }
 
 .dark {
@@ -18,6 +20,8 @@
   --muted: #9ca3af;
   --accent: #60a5fa;
   --accent-hover: #93bbfd;
+  --progress-bg: #262626;
+  --progress-fill: linear-gradient(90deg, #60a5fa, #a78bfa, #f472b6);
 }
 
 @theme inline {
@@ -59,3 +63,197 @@ body {
   opacity: 1;
   transform: translateY(0);
 }
+
+/* Scroll Progress Bar */
+.scroll-progress-bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  z-index: 9999;
+  background: var(--progress-bg);
+}
+
+.scroll-progress-fill {
+  height: 100%;
+  background: var(--progress-fill);
+  border-radius: 0 2px 2px 0;
+  transition: width 0.1s ease-out;
+}
+
+.scroll-progress-car {
+  position: absolute;
+  top: -6px;
+  transition: left 0.1s ease-out;
+  pointer-events: none;
+  filter: drop-shadow(0 1px 2px rgba(0, 0, 0, 0.3));
+}
+
+.car-emoji {
+  font-size: 16px;
+  display: inline-block;
+  animation: car-bounce 0.4s ease-in-out infinite alternate;
+}
+
+@keyframes car-bounce {
+  0% {
+    transform: translateY(0px) rotate(-2deg);
+  }
+  100% {
+    transform: translateY(-1px) rotate(2deg);
+  }
+}
+
+/* Greeting Animation */
+.greeting-container {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  animation: greeting-fade-in 0.8s ease-out forwards;
+}
+
+.wave-hand {
+  font-size: 28px;
+  display: inline-block;
+  animation: wave 1.5s ease-in-out infinite;
+  transform-origin: 70% 70%;
+}
+
+@keyframes wave {
+  0%,
+  100% {
+    transform: rotate(0deg);
+  }
+  10% {
+    transform: rotate(14deg);
+  }
+  20% {
+    transform: rotate(-8deg);
+  }
+  30% {
+    transform: rotate(14deg);
+  }
+  40% {
+    transform: rotate(-4deg);
+  }
+  50% {
+    transform: rotate(10deg);
+  }
+  60% {
+    transform: rotate(0deg);
+  }
+}
+
+.greeting-text {
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--accent);
+  animation: greeting-slide 0.6s ease-out 0.3s both;
+}
+
+@keyframes greeting-fade-in {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes greeting-slide {
+  from {
+    opacity: 0;
+    transform: translateX(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/* Brand Color Icon Buttons */
+.icon-github {
+  color: var(--muted);
+  transition: all 0.2s ease;
+}
+.icon-github:hover {
+  color: #fff;
+  background: #333;
+  transform: scale(1.1);
+}
+.dark .icon-github:hover {
+  color: #333;
+  background: #fff;
+}
+
+.icon-linkedin {
+  color: var(--muted);
+  transition: all 0.2s ease;
+}
+.icon-linkedin:hover {
+  color: #fff;
+  background: #0a66c2;
+  transform: scale(1.1);
+}
+
+.icon-email {
+  color: var(--muted);
+  transition: all 0.2s ease;
+}
+.icon-email:hover {
+  color: #fff;
+  background: #ea4335;
+  transform: scale(1.1);
+}
+
+.icon-phone {
+  color: var(--muted);
+  transition: all 0.2s ease;
+}
+.icon-phone:hover {
+  color: #fff;
+  background: #25d366;
+  transform: scale(1.1);
+}
+
+/* Icon wrapper base */
+.social-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 12px;
+  padding: 10px;
+  transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.social-icon:hover {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Skill tag colors */
+.skill-tag-csharp { background: #68217a20; color: #68217a; }
+.skill-tag-dotnet { background: #512bd420; color: #512bd4; }
+.skill-tag-sql { background: #cc292720; color: #cc2927; }
+.skill-tag-docker { background: #2496ed20; color: #2496ed; }
+.skill-tag-aws { background: #ff990020; color: #ff9900; }
+.skill-tag-git { background: #f0503220; color: #f05032; }
+.skill-tag-angular { background: #dd003120; color: #dd0031; }
+.skill-tag-typescript { background: #3178c620; color: #3178c6; }
+.skill-tag-js { background: #f7df1e20; color: #b8960c; }
+.skill-tag-html { background: #e34f2620; color: #e34f26; }
+.skill-tag-css { background: #1572b620; color: #1572b6; }
+
+.dark .skill-tag-csharp { background: #68217a30; color: #c084fc; }
+.dark .skill-tag-dotnet { background: #512bd430; color: #a78bfa; }
+.dark .skill-tag-sql { background: #cc292730; color: #fca5a5; }
+.dark .skill-tag-docker { background: #2496ed30; color: #93c5fd; }
+.dark .skill-tag-aws { background: #ff990030; color: #fcd34d; }
+.dark .skill-tag-git { background: #f0503230; color: #fca5a5; }
+.dark .skill-tag-angular { background: #dd003130; color: #fca5a5; }
+.dark .skill-tag-typescript { background: #3178c630; color: #93c5fd; }
+.dark .skill-tag-js { background: #f7df1e30; color: #fcd34d; }
+.dark .skill-tag-html { background: #e34f2630; color: #fca5a5; }
+.dark .skill-tag-css { background: #1572b630; color: #93c5fd; }

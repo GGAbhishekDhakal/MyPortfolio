@@ -1,4 +1,5 @@
 import Navbar from "./components/Navbar";
+import ScrollProgress from "./components/ScrollProgress";
 import Hero from "./components/Hero";
 import WorkExperience from "./components/WorkExperience";
 import Education from "./components/Education";
@@ -10,6 +11,7 @@ import Footer from "./components/Footer";
 export default function Home() {
   return (
     <>
+      <ScrollProgress />
       <Navbar />
       <main className="flex-1">
         <Hero />

@@ -9,7 +9,7 @@ const jobs = [
     highlights: [
       "Implemented secure authentication flows using Okta (SSO) across multiple applications",
       "Built reusable front-end modules in Ember.js, integrated with backend APIs",
-      "Actively contributed to Agile sprints—from planning to deployment",
+      "Actively contributed to Agile sprints — from planning to deployment",
       "Runner-Up in Infinite Hackathon 2024 for building a full-stack COE app",
     ],
   },
@@ -45,10 +45,11 @@ export default function WorkExperience() {
       <div className="mx-auto max-w-5xl">
         <Reveal>
           <h2 className="mb-2 text-2xl font-bold tracking-tight text-foreground">
-            Work Experience
+            Where I&apos;ve Worked
           </h2>
           <p className="mb-12 text-sm text-muted">
-            My professional journey building .NET applications.
+            A timeline of my professional journey — from eager intern to
+            building production systems at scale.
           </p>
         </Reveal>
 

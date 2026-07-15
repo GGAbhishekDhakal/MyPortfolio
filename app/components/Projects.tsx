@@ -5,7 +5,7 @@ const projects = [
     title: "MoneyFex / KIIPay",
     subtitle: "International Remittance Platform",
     description:
-      "Contributed to a secure cross-border remittance system supporting bank transfers, mobile money, and cash pickups. Integrated Stripe for online payments, optimized data flow, and ensured a smooth user experience for global transactions.",
+      "A secure cross-border remittance system supporting bank transfers, mobile money, and cash pickups. I integrated Stripe for online payments, optimized the data flow, and helped ensure a smooth experience for users sending money across borders.",
     tags: [".NET", "Stripe", "Payments"],
     featured: true,
   },
@@ -13,7 +13,7 @@ const projects = [
     title: "COE Management System",
     subtitle: "Hackathon Runner-Up 2024",
     description:
-      "Built a Center of Excellence (COE) Management System during a company hackathon to manage internal training programs. Features include attendance tracking, team grouping, and efficient session management.",
+      "Built during a company hackathon — a management system for internal training programs with attendance tracking, team grouping, and session management. Our team took second place out of 20+ entries.",
     tags: [".NET", "Full-Stack", "Internal Tools"],
     featured: false,
   },
@@ -21,7 +21,7 @@ const projects = [
     title: "BMS — Breeder Management System",
     subtitle: "Valley Cold Store",
     description:
-      "A user-friendly app for commercial broiler farmers to manage poultry operations. Features include flock health tracking, inventory management, daily mortality/expense entries, and flock-wise cash flow reports.",
+      "An app for commercial broiler farmers to manage poultry operations — flock health tracking, inventory management, daily entries, and cash flow reports that reveal real insights into productivity and profitability.",
     tags: [".NET", "SQL Server", "Agriculture"],
     featured: false,
   },
@@ -36,10 +36,11 @@ export default function Projects() {
       <div className="mx-auto max-w-5xl">
         <Reveal>
           <h2 className="mb-2 text-2xl font-bold tracking-tight text-foreground">
-            Projects
+            Things I&apos;ve Built
           </h2>
           <p className="mb-12 text-sm text-muted">
-            Key projects I&apos;ve built or contributed to.
+            A few projects I&apos;m proud of — from hackathon experiments to
+            production systems handling real money.
           </p>
         </Reveal>
 
@@ -48,14 +49,14 @@ export default function Projects() {
             <div className="group mb-6 overflow-hidden rounded-2xl border border-accent/30 bg-gradient-to-br from-accent/5 via-card to-accent/10 p-8 transition-all hover:border-accent/60 hover:shadow-xl hover:shadow-accent/10">
               <div className="mb-3 flex items-center gap-2">
                 <span className="rounded-full bg-accent/20 px-3 py-1 text-xs font-semibold text-accent">
-                  Featured
+                  ⭐ Featured
                 </span>
                 <span className="text-xs text-muted">{featured.subtitle}</span>
               </div>
               <h3 className="mb-3 text-2xl font-bold text-foreground">
                 {featured.title}
               </h3>
-              <p className="mb-6 max-w-2xl text-sm leading-relaxed text-muted">
+              <p className="mb-6 max-w-2xl text-sm leading-relaxed text-muted sm:text-base">
                 {featured.description}
               </p>
               <div className="flex flex-wrap items-center gap-3">

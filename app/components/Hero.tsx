@@ -1,56 +1,63 @@
 "use client";
 
 import Typewriter from "./Typewriter";
+import Greeting from "./Greeting";
 
 export default function Hero() {
   return (
     <section className="flex min-h-[85vh] flex-col items-center justify-center px-6 pt-24 pb-16 text-center">
       <div className="flex flex-col items-center gap-6">
         <div className="flex items-center gap-2 rounded-full border border-card-border bg-card px-4 py-1.5 text-xs text-muted">
-          <span className="h-1.5 w-1.5 rounded-full bg-green-500" />
+          <span className="h-1.5 w-1.5 rounded-full bg-green-500 animate-pulse" />
           Open to opportunities
         </div>
+
+        <Greeting />
 
         <h1 className="max-w-2xl text-4xl font-bold tracking-tight text-foreground sm:text-5xl lg:text-6xl">
           Abhishek Dhakal
         </h1>
 
-        <div className="text-lg sm:text-xl">
-          I&apos;m a{" "}
+        <div className="text-lg text-muted sm:text-xl">
+          <span className="mr-1">I build things as a</span>
           <Typewriter />
         </div>
 
-        <p className="max-w-md text-sm leading-relaxed text-muted">
-          Based in Kathmandu, Nepal. Building clean, scalable solutions with a
-          passion for continuous learning and Agile collaboration.
+        <p className="max-w-lg text-sm leading-relaxed text-muted sm:text-base">
+          Full-stack developer from Kathmandu, Nepal — turning complex problems
+          into clean, scalable .NET applications. I love writing code that
+          actually works, learning something new every day, and shipping
+          products that make a difference.
         </p>
 
         <div className="mt-2 flex flex-wrap items-center justify-center gap-4">
           <a
             href="#contact"
-            className="inline-flex h-11 items-center rounded-full bg-accent px-6 text-sm font-medium text-white transition-all hover:bg-accent-hover hover:shadow-lg hover:shadow-accent/25"
+            className="inline-flex h-11 items-center gap-2 rounded-full bg-accent px-6 text-sm font-medium text-white transition-all hover:bg-accent-hover hover:shadow-lg hover:shadow-accent/25"
           >
-            Get in Touch
+            Let&apos;s Talk
+            <span aria-hidden="true">→</span>
           </a>
           <a
             href="#work"
-            className="inline-flex h-11 items-center rounded-full border border-card-border bg-card px-6 text-sm font-medium text-foreground transition-all hover:border-accent hover:text-accent hover:shadow-lg hover:shadow-accent/10"
+            className="inline-flex h-11 items-center gap-2 rounded-full border border-card-border bg-card px-6 text-sm font-medium text-foreground transition-all hover:border-accent hover:text-accent hover:shadow-lg hover:shadow-accent/10"
           >
-            View Work
+            See My Work
+            <span aria-hidden="true">↓</span>
           </a>
         </div>
 
-        <div className="mt-6 flex items-center gap-4">
+        <div className="mt-6 flex items-center gap-3">
           <a
             href="https://github.com/GGAbhishekDhakal"
             target="_blank"
             rel="noopener noreferrer"
-            className="text-muted transition-all hover:scale-110 hover:text-foreground"
+            className="social-icon icon-github"
             aria-label="GitHub"
           >
             <svg
-              width="22"
-              height="22"
+              width="20"
+              height="20"
               viewBox="0 0 24 24"
               fill="currentColor"
             >
@@ -61,12 +68,12 @@ export default function Hero() {
             href="https://www.linkedin.com/in/abhishek-dhakal-02183a184/"
             target="_blank"
             rel="noopener noreferrer"
-            className="text-muted transition-all hover:scale-110 hover:text-foreground"
+            className="social-icon icon-linkedin"
             aria-label="LinkedIn"
           >
             <svg
-              width="22"
-              height="22"
+              width="20"
+              height="20"
               viewBox="0 0 24 24"
               fill="currentColor"
             >
@@ -75,12 +82,12 @@ export default function Hero() {
           </a>
           <a
             href="mailto:gg.abhishekdhakal@gmail.com"
-            className="text-muted transition-all hover:scale-110 hover:text-foreground"
+            className="social-icon icon-email"
             aria-label="Email"
           >
             <svg
-              width="22"
-              height="22"
+              width="20"
+              height="20"
               viewBox="0 0 24 24"
               fill="none"
               stroke="currentColor"
