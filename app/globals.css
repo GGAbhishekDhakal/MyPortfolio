@@ -148,10 +148,10 @@ body {
 
 @keyframes car-bounce {
   0% {
-    transform: translateY(0px) rotate(-3deg) scale(1);
+    transform: scaleX(-1) translateY(0px) rotate(-3deg) scale(1);
   }
   100% {
-    transform: translateY(-3px) rotate(3deg) scale(1.05);
+    transform: scaleX(-1) translateY(-3px) rotate(3deg) scale(1.05);
   }
 }
 
