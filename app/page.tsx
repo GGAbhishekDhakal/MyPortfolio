@@ -13,17 +13,19 @@ export default function Home() {
   return (
     <>
       <GalaxyBackground />
-      <ScrollProgress />
-      <Navbar />
-      <main className="flex-1">
-        <Hero />
-        <WorkExperience />
-        <Education />
-        <Skills />
-        <Projects />
-        <Contact />
-      </main>
-      <Footer />
+      <div className="page-content">
+        <ScrollProgress />
+        <Navbar />
+        <main className="flex-1">
+          <Hero />
+          <WorkExperience />
+          <Education />
+          <Skills />
+          <Projects />
+          <Contact />
+        </main>
+        <Footer />
+      </div>
     </>
   );
 }

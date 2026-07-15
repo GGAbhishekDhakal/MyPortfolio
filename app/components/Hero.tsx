@@ -5,7 +5,7 @@ import Greeting from "./Greeting";
 
 export default function Hero() {
   return (
-    <section className="flex min-h-[85vh] flex-col items-center justify-center px-6 pt-24 pb-16 text-center">
+    <section className="flex min-h-[85vh] flex-col items-center justify-center bg-transparent px-6 pt-24 pb-16 text-center">
       <div className="flex flex-col items-center gap-6">
         <div className="flex items-center gap-2 rounded-full border border-card-border bg-card px-4 py-1.5 text-xs text-muted">
           <span className="h-1.5 w-1.5 rounded-full bg-green-500 animate-pulse" />

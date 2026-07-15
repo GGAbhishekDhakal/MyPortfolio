@@ -41,9 +41,14 @@ html {
 }
 
 body {
-  background: var(--background);
+  background: transparent;
   color: var(--foreground);
   font-family: var(--font-sans), Arial, Helvetica, sans-serif;
+}
+
+.page-content {
+  position: relative;
+  background: var(--background);
 }
 
 ::selection {
@@ -137,6 +142,7 @@ body {
 .car-emoji {
   font-size: 28px;
   display: inline-block;
+  transform: scaleX(-1);
   animation: car-bounce 0.35s ease-in-out infinite alternate;
 }
 
