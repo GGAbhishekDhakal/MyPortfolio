@@ -70,15 +70,20 @@ body {
   transform: translateY(0);
 }
 
-/* Galaxy Canvas */
-.galaxy-canvas {
+/* Galaxy Background */
+.galaxy-container {
   position: fixed;
-  top: 0;
-  left: 0;
-  width: 100vw;
-  height: 100vh;
+  inset: 0;
   z-index: -1;
   pointer-events: none;
+  background: #000;
+}
+
+.galaxy-container canvas {
+  position: absolute;
+  inset: 0;
+  width: 100% !important;
+  height: 100% !important;
 }
 
 /* Scroll Progress Bar — Race Track */
