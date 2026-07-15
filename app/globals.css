@@ -38,6 +38,7 @@
 
 html {
   scroll-behavior: smooth;
+  background: transparent !important;
 }
 
 body {
@@ -140,18 +141,16 @@ body {
 }
 
 .car-emoji {
-  font-size: 28px;
   display: inline-block;
-  transform: scaleX(-1);
   animation: car-bounce 0.35s ease-in-out infinite alternate;
 }
 
 @keyframes car-bounce {
   0% {
-    transform: scaleX(-1) translateY(0px) rotate(-3deg) scale(1);
+    transform: translateY(0px) rotate(-2deg);
   }
   100% {
-    transform: scaleX(-1) translateY(-3px) rotate(3deg) scale(1.05);
+    transform: translateY(-3px) rotate(2deg);
   }
 }
 
