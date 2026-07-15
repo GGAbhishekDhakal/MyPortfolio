@@ -26,7 +26,7 @@ export default function ScrollProgress() {
       />
       <div
         className="scroll-progress-car"
-        style={{ left: `calc(${Math.min(progress, 97)}% - 10px)` }}
+        style={{ left: `calc(${Math.min(progress, 97)}% - 14px)` }}
       >
         <span className="car-emoji" aria-hidden="true">
           🏎️
