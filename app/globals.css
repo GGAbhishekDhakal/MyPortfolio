@@ -48,11 +48,6 @@ body {
   font-family: var(--font-sans), Arial, Helvetica, sans-serif;
 }
 
-.page-content {
-  position: relative;
-  background: transparent;
-}
-
 .card-glass {
   background: rgba(255, 255, 255, 0.8);
   border: 1px solid rgba(255, 255, 255, 0.15);

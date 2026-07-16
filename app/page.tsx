@@ -13,19 +13,17 @@ export default function Home() {
   return (
     <>
       <Hero />
-      <div className="page-content">
-        <ScrollProgress />
-        <Navbar />
-        <main className="flex-1">
-          <WorkExperience />
-          <Organizations />
-          <Education />
-          <Skills />
-          <Projects />
-          <Contact />
-        </main>
-        <Footer />
-      </div>
+      <ScrollProgress />
+      <Navbar />
+      <main className="flex-1">
+        <WorkExperience />
+        <Organizations />
+        <Education />
+        <Skills />
+        <Projects />
+        <Contact />
+      </main>
+      <Footer />
     </>
   );
 }
