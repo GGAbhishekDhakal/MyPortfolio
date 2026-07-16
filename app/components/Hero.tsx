@@ -27,8 +27,8 @@ export default function Hero() {
         <Image
           src="/profile.png"
           alt="Abhishek Dhakal"
-          width={128}
-          height={128}
+          width={192}
+          height={192}
           className="rounded-full border-2 border-card-border object-cover shadow-lg"
           priority
         />
