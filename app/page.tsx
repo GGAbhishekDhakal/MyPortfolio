@@ -1,5 +1,6 @@
 import Navbar from "./components/Navbar";
 import ScrollProgress from "./components/ScrollProgress";
+import GalaxyBackground from "./components/GalaxyBackground";
 import Hero from "./components/Hero";
 import WorkExperience from "./components/WorkExperience";
 import Organizations from "./components/Organizations";
@@ -12,6 +13,9 @@ import Footer from "./components/Footer";
 export default function Home() {
   return (
     <>
+      <div className="galaxy-bg-wrapper">
+        <GalaxyBackground />
+      </div>
       <Hero />
       <ScrollProgress />
       <Navbar />
