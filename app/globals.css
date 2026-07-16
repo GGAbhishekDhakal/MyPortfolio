@@ -155,17 +155,17 @@ body {
   filter: drop-shadow(0 2px 6px rgba(0, 0, 0, 0.5));
 }
 
-.car-emoji {
+.rocket-emoji {
   display: inline-block;
-  animation: car-bounce 0.35s ease-in-out infinite alternate;
+  animation: rocket-float 0.6s ease-in-out infinite alternate;
 }
 
-@keyframes car-bounce {
+@keyframes rocket-float {
   0% {
-    transform: translateY(0px) rotate(-2deg);
+    transform: translateY(0px);
   }
   100% {
-    transform: translateY(-3px) rotate(2deg);
+    transform: translateY(-3px);
   }
 }
 
