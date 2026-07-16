@@ -90,7 +90,7 @@ export default function Skills() {
         <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
           {categories.map((cat, i) => (
             <Reveal key={i} delay={i * 80}>
-              <div className="rounded-xl border border-card-border bg-card p-6 transition-all hover:border-accent/40 hover:shadow-lg hover:shadow-accent/5">
+              <div className="rounded-xl border border-card-border card-glass p-6 transition-all hover:border-accent/40 hover:shadow-lg hover:shadow-accent/5">
                 <h3 className="mb-4 text-sm font-semibold text-foreground">
                   <span className="mr-1.5">{cat.icon}</span>
                   {cat.title}

@@ -59,7 +59,7 @@ export default function WorkExperience() {
               <div className="relative pl-8 md:pl-12">
                 <div className="absolute left-0 top-2 h-4 w-4 rounded-full border-2 border-accent bg-background md:left-[4px]" />
 
-                <div className="rounded-xl border border-card-border bg-card p-6 transition-all hover:border-accent/40 hover:shadow-lg hover:shadow-accent/5">
+                <div className="rounded-xl border border-card-border card-glass p-6 transition-all hover:border-accent/40 hover:shadow-lg hover:shadow-accent/5">
                   <div className="mb-1 flex flex-wrap items-start justify-between gap-2">
                     <h3 className="text-lg font-semibold text-foreground">
                       {job.role}

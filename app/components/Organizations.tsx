@@ -41,7 +41,7 @@ export default function Organizations() {
                 href={org.url}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="group block rounded-xl border border-card-border bg-card p-6 transition-all hover:border-accent/40 hover:shadow-lg hover:shadow-accent/5"
+                className="group block rounded-xl border border-card-border card-glass p-6 transition-all hover:border-accent/40 hover:shadow-lg hover:shadow-accent/5"
               >
                 <div className="mb-3 flex items-center gap-3">
                   <div className="flex h-10 w-10 items-center justify-center rounded-lg bg-accent/10 text-accent">

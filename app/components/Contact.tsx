@@ -18,7 +18,7 @@ export default function Contact() {
           <Reveal delay={0}>
             <a
               href="mailto:gg.abhishekdhakal@gmail.com"
-              className="group flex items-center gap-4 rounded-xl border border-card-border bg-card p-6 transition-all hover:border-[#ea4335]/40 hover:shadow-lg hover:shadow-[#ea4335]/10"
+              className="group flex items-center gap-4 rounded-xl border border-card-border card-glass p-6 transition-all hover:border-[#ea4335]/40 hover:shadow-lg hover:shadow-[#ea4335]/10"
             >
               <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-lg bg-[#ea4335]/10 text-[#ea4335] transition-all group-hover:bg-[#ea4335] group-hover:text-white group-hover:shadow-lg group-hover:shadow-[#ea4335]/25">
                 <svg
@@ -47,7 +47,7 @@ export default function Contact() {
           <Reveal delay={100}>
             <a
               href="tel:+9779861969001"
-              className="group flex items-center gap-4 rounded-xl border border-card-border bg-card p-6 transition-all hover:border-[#25d366]/40 hover:shadow-lg hover:shadow-[#25d366]/10"
+              className="group flex items-center gap-4 rounded-xl border border-card-border card-glass p-6 transition-all hover:border-[#25d366]/40 hover:shadow-lg hover:shadow-[#25d366]/10"
             >
               <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-lg bg-[#25d366]/10 text-[#25d366] transition-all group-hover:bg-[#25d366] group-hover:text-white group-hover:shadow-lg group-hover:shadow-[#25d366]/25">
                 <svg
@@ -75,7 +75,7 @@ export default function Contact() {
               href="https://www.linkedin.com/in/abhishek-dhakal-02183a184/"
               target="_blank"
               rel="noopener noreferrer"
-              className="group flex items-center gap-4 rounded-xl border border-card-border bg-card p-6 transition-all hover:border-[#0a66c2]/40 hover:shadow-lg hover:shadow-[#0a66c2]/10"
+              className="group flex items-center gap-4 rounded-xl border border-card-border card-glass p-6 transition-all hover:border-[#0a66c2]/40 hover:shadow-lg hover:shadow-[#0a66c2]/10"
             >
               <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-lg bg-[#0a66c2]/10 text-[#0a66c2] transition-all group-hover:bg-[#0a66c2] group-hover:text-white group-hover:shadow-lg group-hover:shadow-[#0a66c2]/25">
                 <svg

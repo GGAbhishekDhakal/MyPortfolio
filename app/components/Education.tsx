@@ -37,7 +37,7 @@ export default function Education() {
         <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
           {education.map((edu, i) => (
             <Reveal key={i} delay={i * 100}>
-              <div className="rounded-xl border border-card-border bg-card p-6 transition-all hover:border-accent/40 hover:shadow-lg hover:shadow-accent/5">
+              <div className="rounded-xl border border-card-border card-glass p-6 transition-all hover:border-accent/40 hover:shadow-lg hover:shadow-accent/5">
                 <span className="mb-3 inline-block rounded-full bg-accent/10 px-3 py-1 text-xs font-medium text-accent">
                   {edu.year}
                 </span>

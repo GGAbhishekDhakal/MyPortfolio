@@ -46,7 +46,7 @@ export default function Projects() {
 
         {featured && (
           <Reveal delay={100}>
-            <div className="group mb-6 overflow-hidden rounded-2xl border border-accent/30 bg-gradient-to-br from-accent/5 via-card to-accent/10 p-8 transition-all hover:border-accent/60 hover:shadow-xl hover:shadow-accent/10">
+            <div className="group mb-6 overflow-hidden rounded-2xl border border-accent/30 bg-gradient-to-br from-accent/5 via-transparent to-accent/10 p-8 transition-all hover:border-accent/60 hover:shadow-xl hover:shadow-accent/10">
               <div className="mb-3 flex items-center gap-2">
                 <span className="rounded-full bg-accent/20 px-3 py-1 text-xs font-semibold text-accent">
                   ⭐ Featured
@@ -76,7 +76,7 @@ export default function Projects() {
         <div className="grid gap-4 sm:grid-cols-2">
           {others.map((project, i) => (
             <Reveal key={i} delay={200 + i * 100}>
-              <div className="group flex h-full flex-col rounded-xl border border-card-border bg-card p-6 transition-all hover:border-accent/40 hover:shadow-lg hover:shadow-accent/5">
+              <div className="group flex h-full flex-col rounded-xl border border-card-border card-glass p-6 transition-all hover:border-accent/40 hover:shadow-lg hover:shadow-accent/5">
                 <p className="mb-1 text-xs font-medium text-accent">
                   {project.subtitle}
                 </p>

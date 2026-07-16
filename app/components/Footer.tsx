@@ -5,7 +5,7 @@ export default function Footer() {
     <footer className="border-t border-card-border px-6 py-8">
       <div className="mx-auto max-w-5xl">
         <Reveal>
-          <div className="mb-8 rounded-xl border border-card-border bg-card p-6 text-center">
+          <div className="mb-8 rounded-xl border border-card-border card-glass p-6 text-center">
             <p className="mb-1 text-sm font-semibold text-foreground">
               Want the full story?
             </p>
