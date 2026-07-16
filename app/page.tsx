@@ -1,6 +1,5 @@
 import Navbar from "./components/Navbar";
 import ScrollProgress from "./components/ScrollProgress";
-import GalaxyBackground from "./components/GalaxyBackground";
 import Hero from "./components/Hero";
 import WorkExperience from "./components/WorkExperience";
 import Organizations from "./components/Organizations";
@@ -13,7 +12,6 @@ import Footer from "./components/Footer";
 export default function Home() {
   return (
     <>
-      <GalaxyBackground />
       <Hero />
       <div className="page-content">
         <ScrollProgress />

@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
+import GalaxyBackground from "./components/GalaxyBackground";
 import "./globals.css";
 
 const geistSans = Geist({
@@ -59,7 +60,10 @@ export default function RootLayout({
           }}
         />
       </head>
-      <body className="min-h-full flex flex-col overflow-x-hidden">{children}</body>
+      <body className="min-h-full flex flex-col overflow-x-hidden">
+        <GalaxyBackground />
+        {children}
+      </body>
     </html>
   );
 }
