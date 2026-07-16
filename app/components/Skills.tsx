@@ -1,4 +1,8 @@
+"use client";
+
+import { useRef } from "react";
 import Reveal from "./Reveal";
+import { useParallax } from "./useParallax";
 
 const categories = [
   {
@@ -74,18 +78,23 @@ const categories = [
 ];
 
 export default function Skills() {
+  const headingRef = useRef<HTMLDivElement>(null);
+  const offset = useParallax(headingRef);
+
   return (
     <section id="skills" className="px-6 py-20">
       <div className="mx-auto max-w-5xl">
-        <Reveal>
-          <h2 className="mb-2 text-2xl font-bold tracking-tight text-foreground">
-            My Toolbox
-          </h2>
-          <p className="mb-12 text-sm text-muted">
-            The technologies, tools, and patterns I reach for when building
-            something great.
-          </p>
-        </Reveal>
+        <div ref={headingRef} style={{ transform: `translateY(${offset}px)` }}>
+          <Reveal>
+            <h2 className="mb-2 text-2xl font-bold tracking-tight text-foreground">
+              My Toolbox
+            </h2>
+            <p className="mb-12 text-sm text-muted">
+              The technologies, tools, and patterns I reach for when building
+              something great.
+            </p>
+          </Reveal>
+        </div>
 
         <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
           {categories.map((cat, i) => (

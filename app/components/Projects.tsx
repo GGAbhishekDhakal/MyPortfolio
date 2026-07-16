@@ -1,4 +1,8 @@
+"use client";
+
+import { useRef } from "react";
 import Reveal from "./Reveal";
+import { useParallax } from "./useParallax";
 
 const projects = [
   {
@@ -30,19 +34,23 @@ const projects = [
 export default function Projects() {
   const featured = projects.find((p) => p.featured);
   const others = projects.filter((p) => !p.featured);
+  const headingRef = useRef<HTMLDivElement>(null);
+  const offset = useParallax(headingRef);
 
   return (
     <section id="projects" className="px-6 py-20">
       <div className="mx-auto max-w-5xl">
-        <Reveal>
-          <h2 className="mb-2 text-2xl font-bold tracking-tight text-foreground">
-            Things I&apos;ve Built
-          </h2>
-          <p className="mb-12 text-sm text-muted">
-            A few projects I&apos;m proud of — from hackathon experiments to
-            production systems handling real money.
-          </p>
-        </Reveal>
+        <div ref={headingRef} style={{ transform: `translateY(${offset}px)` }}>
+          <Reveal>
+            <h2 className="mb-2 text-2xl font-bold tracking-tight text-foreground">
+              Things I&apos;ve Built
+            </h2>
+            <p className="mb-12 text-sm text-muted">
+              A few projects I&apos;m proud of — from hackathon experiments to
+              production systems handling real money.
+            </p>
+          </Reveal>
+        </div>
 
         {featured && (
           <Reveal delay={100}>

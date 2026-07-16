@@ -1,11 +1,20 @@
 "use client";
 
+import { useRef } from "react";
 import Typewriter from "./Typewriter";
 import Greeting from "./Greeting";
+import AnimatedCounter from "./AnimatedCounter";
+import { useParallax } from "./useParallax";
 
 export default function Hero() {
+  const sectionRef = useRef<HTMLElement>(null);
+  const offset = useParallax(sectionRef);
   return (
-    <section className="flex min-h-[85vh] flex-col items-center justify-center bg-transparent px-6 pt-24 pb-16 text-center">
+    <section
+      ref={sectionRef}
+      className="flex min-h-[85vh] flex-col items-center justify-center bg-transparent px-6 pt-24 pb-16 text-center"
+      style={{ transform: `translateY(${offset}px)` }}
+    >
       <div className="flex flex-col items-center gap-6">
         <div className="flex items-center gap-2 rounded-full border border-card-border bg-card px-4 py-1.5 text-xs text-muted">
           <span className="h-1.5 w-1.5 rounded-full bg-green-500 animate-pulse" />
@@ -99,6 +108,13 @@ export default function Hero() {
               <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7" />
             </svg>
           </a>
+        </div>
+
+        <div className="mt-10 grid grid-cols-2 gap-6 sm:grid-cols-4 sm:gap-8">
+          <AnimatedCounter target={5} suffix="+" label="Years Experience" />
+          <AnimatedCounter target={15} suffix="+" label="Projects Delivered" />
+          <AnimatedCounter target={3} label="Companies" />
+          <AnimatedCounter target={2} label="Hackathon Wins" />
         </div>
       </div>
     </section>
