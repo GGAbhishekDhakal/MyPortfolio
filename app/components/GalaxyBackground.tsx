@@ -11,8 +11,8 @@ export default function GalaxyBackground() {
           starsRotationSpeed: 2,
           nebulasIntensity: 12,
           cometFrequence: 10,
-          sunScale: 1,
-          planetsScale: 1,
+          sunScale: 2,
+          planetsScale: 2.5,
           solarSystemOrbite: 75,
           solarSystemSpeedOrbit: 80,
         }}
