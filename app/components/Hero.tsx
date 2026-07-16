@@ -1,6 +1,7 @@
 "use client";
 
 import { useRef } from "react";
+import Image from "next/image";
 import Typewriter from "./Typewriter";
 import Greeting from "./Greeting";
 import AnimatedCounter from "./AnimatedCounter";
@@ -22,6 +23,15 @@ export default function Hero() {
         </div>
 
         <Greeting />
+
+        <Image
+          src="/profile.png"
+          alt="Abhishek Dhakal"
+          width={128}
+          height={128}
+          className="rounded-full border-2 border-card-border object-cover shadow-lg"
+          priority
+        />
 
         <h1 className="max-w-2xl text-4xl font-bold tracking-tight text-foreground sm:text-5xl lg:text-6xl">
           Abhishek Dhakal
