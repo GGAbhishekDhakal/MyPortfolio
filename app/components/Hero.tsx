@@ -24,17 +24,17 @@ export default function Hero() {
 
         <Greeting />
 
-        <Image
-          src="/profile.png"
-          alt="Abhishek Dhakal"
-          width={192}
-          height={192}
-          className="rounded-full border-2 border-card-border object-cover shadow-lg"
-          priority
-        />
-
-        <h1 className="max-w-2xl text-4xl font-bold tracking-tight text-foreground sm:text-5xl lg:text-6xl">
-          Abhishek Dhakal
+        <h1 className="flex items-center gap-4 text-4xl font-bold tracking-tight text-foreground sm:text-5xl lg:text-6xl">
+          <span>Abhishek</span>
+          <Image
+            src="/profile.png"
+            alt="Abhishek Dhakal"
+            width={56}
+            height={56}
+            className="rounded-full border-2 border-card-border object-cover shadow-lg"
+            priority
+          />
+          <span>Dhakal</span>
         </h1>
 
         <div className="text-lg text-muted sm:text-xl">
