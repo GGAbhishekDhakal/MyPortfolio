@@ -14,7 +14,7 @@ export default function Contact() {
           </p>
         </Reveal>
 
-        <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+        <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
           <Reveal delay={0}>
             <a
               href="mailto:gg.abhishekdhakal@gmail.com"
@@ -71,6 +71,38 @@ export default function Contact() {
           </Reveal>
 
           <Reveal delay={200}>
+            <a
+              href="https://abhishekhdhakal.com.np"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="group flex items-center gap-4 rounded-xl border border-card-border card-glass p-6 transition-all hover:border-accent/40 hover:shadow-lg hover:shadow-accent/10"
+            >
+              <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-lg bg-accent/10 text-accent transition-all group-hover:bg-accent group-hover:text-white group-hover:shadow-lg group-hover:shadow-accent/25">
+                <svg
+                  width="20"
+                  height="20"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  strokeWidth="2"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                >
+                  <circle cx="12" cy="12" r="10" />
+                  <path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20" />
+                  <path d="M2 12h20" />
+                </svg>
+              </div>
+              <div>
+                <p className="text-sm font-medium text-foreground">Website</p>
+                <p className="text-xs text-muted break-all">
+                  abhishekhdhakal.com.np
+                </p>
+              </div>
+            </a>
+          </Reveal>
+
+          <Reveal delay={300}>
             <a
               href="https://www.linkedin.com/in/abhishek-dhakal-02183a184/"
               target="_blank"

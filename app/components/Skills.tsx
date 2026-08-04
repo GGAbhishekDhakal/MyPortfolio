@@ -16,6 +16,7 @@ const categories = [
       { name: "Minimal API", className: "skill-tag-dotnet" },
       { name: "MVC", className: "skill-tag-dotnet" },
       { name: "Entity Framework Core", className: "skill-tag-dotnet" },
+      { name: "NHibernate", className: "skill-tag-dotnet" },
       { name: "LINQ", className: "skill-tag-dotnet" },
     ],
   },
@@ -34,6 +35,8 @@ const categories = [
     icon: "☁️",
     skills: [
       { name: "Docker", className: "skill-tag-docker" },
+      { name: "Kubernetes", className: "skill-tag-docker" },
+      { name: "CI/CD (Bamboo + Octopus)", className: "skill-tag-docker" },
       { name: "AWS EC2", className: "skill-tag-aws" },
       { name: "Windows Server", className: "" },
       { name: "IIS Server", className: "" },
@@ -71,8 +74,8 @@ const categories = [
       { name: "Communication", className: "" },
       { name: "Team Collaboration", className: "" },
       { name: "Problem-Solving", className: "" },
+      { name: "Report Writing & Documentation", className: "" },
       { name: "Continuous Learning", className: "" },
-      { name: "Documentation", className: "" },
     ],
   },
 ];

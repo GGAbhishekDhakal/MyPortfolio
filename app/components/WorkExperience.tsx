@@ -15,6 +15,8 @@ const jobs = [
       "Built reusable front-end modules in Ember.js, integrated with backend APIs",
       "Actively contributed to Agile sprints — from planning to deployment",
       "Runner-Up in Infinite Hackathon 2024 for building a full-stack COE app",
+      "Wrote unit and integration tests using MSTest to support code quality and reliability",
+      "Contributed to modernization efforts including dependency upgrades and containerization by migrating the app to Docker and Kubernetes",
     ],
   },
   {
@@ -26,7 +28,10 @@ const jobs = [
       "Worked on backend development using .NET, focusing on API integration, data handling, and authentication",
       "Integrated Angular and Ember.js frontends with .NET APIs",
       "Gained exposure to code quality and security tools like SonarQube, Veracode, and penetration testing",
+      "Participated in automation and deployment processes across development and staging environments",
       "Led a team in an internal Hackathon to build a Jira-based performance dashboard",
+      "Used Git, Bitbucket, and SourceTree for version control and collaborative development",
+      "Wrote unit and integration tests using MSTest to support code quality and reliability",
     ],
   },
   {
@@ -39,6 +44,7 @@ const jobs = [
       "Built and maintained applications with Entity Framework and SQL Server",
       "Gained exposure to ADO.net and real-world IoT system deployment",
       "Managed full project lifecycles and provided client-facing support",
+      "Learned how a tech company operates and sustains itself through real-world challenges and complexities",
     ],
   },
 ];
